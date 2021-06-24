@@ -17,7 +17,7 @@
             <img src="assets/images/Nomsy_Creations_logo.png" width="125px">
         </div>
         <nav>
-            <ul>
+            <ul id="MenuItems">
                 <li><a href="">Home</a></li>
                 <li><a href="">Products</a></li>
                 <li><a href="">About</a></li>
@@ -26,7 +26,10 @@
             </ul>
         </nav>
         <img src="image/cart.png" width="30px" height="30px" alt="">
-    </div>
+        <img src="images/menu.png" class="menu-icon"
+        onclick="menutoggle()">
+
+    </di  v>
     <div class="row">
         <div class="col-2">
             <h1>Give Your workout <br>A New Style!</h1>
@@ -333,6 +336,10 @@
                       <div class="footer-col-1">
                           <h3>Download Our App </h3>
                           <p>Download app for Android and ios mobile phone.</p>
+                          <div class= "app-logo">
+                              <img src="assets/images/play-store.png">
+                              <img src="assets/images/app-store.png">
+                          </div>
                       </div>
                         <div class="footer-col-2">
                          <img src="assets/images/logo-white.png" alt="">
@@ -359,7 +366,27 @@
                          </ul>
                       </div>
                   </div>
+                  <hr>
+                  <p class="copyright">Copyright 2020 - Easy Tutorials</p>
               </div>
           </div>
+        <!-- js fot toggle menu -->
+        <script>
+            var MenuItems= document.getElemtyId()
+            MenuItems = document.getElementById("MenuItems")
+
+            function menutoggle(){
+                if(MenuItems.style.maight == "0px") 
+                {
+                MenuItems.style.maight == "200px";
+                }
+            else{
+                 MenuItems.style.maight == "200px"
+                }
+            }
+
+                )
+            }
+        </script>  
 </body>
 </html>
